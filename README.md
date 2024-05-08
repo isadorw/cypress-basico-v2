@@ -1,29 +1,57 @@
-# Testes automatizados com Cypress - Básico
+# Testes automatizados da aplicação CAT TAT
 
-👋 Seja bem-vindo(a)!
+👋 Bem-vindo(a) ao repositório de testes automatizados da CAT TAT!
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Este repositório é dedicado ao desenvolvimento e execução de testes automatizados para diversos cenários do formulário de atendimento ao cliente da aplicação CAT TAT, utilizando o Cypress como nossa principal ferramenta de testes. Este projeto é parte prática do curso "Cypress Básico" ministrado por Walmyr Filho.
 
-## O que você vai aprender
+Aqui você encontrará informações sobre como contribuir para o projeto, clonando e configurando o ambiente de testes em sua própria máquina.
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+## 🚧 Status do Projeto
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+🚧 **Projeto de automação em desenvolvimento** 🚧
 
-## Vamos começar?
+## 🛠 Funcionalidades do Projeto
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+- **Formulário de atendimento ao cliente:**
+  - Nome e Sobrenome
+  - E-mail
+  - Telefone
+  - Produto
+  - Tipo de atendimento
+  - Preferência de atendimento
+  - Campo de texto para detalhes adicionais
+  - Opção de anexar arquivos
 
-___
+- **Política de privacidade**
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+![Funcionamento do projeto](cat.gif)
+
+## 📖 Como configurar e rodar o projeto
+
+### Pré-requisitos
+
+Antes de iniciar, certifique-se de que seu computador tenha os seguintes programas instalados:
+- **Node.js**
+  - Versão utilizada: 18.9.1
+- **npm**
+  - Versão utilizada: 9.2.0
+
+### 💻 Instalação
+
+Clone este repositório usando o comando:
+
+`git clone <url-do-repositorio>`
+
+Em seguida, navegue até o diretório do projeto e instale as dependências:
+
+`npm install`
+
+### 🚀 Executando os Testes
+
+Para rodar os testes, você tem algumas opções:
+- Para execução em modo headless (terminal):
+`npm test`
+- Para abrir o ambiente interativo do Cypress e executar os testes em um navegador:
+`npm run:cy:open`
+
+Explore as funcionalidades do Cypress e contribua para a melhoria contínua do nosso projeto. Agradecemos por seu interesse e contribuição!
