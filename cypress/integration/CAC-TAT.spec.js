@@ -123,12 +123,12 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             .should('have.value', 'feedback')
     })
 
-    it('marca cada tipo de atendimento', function() {
+    it.only('marca cada tipo de atendimento', function() {
         cy.get('input[type="radio"]')
             .should('have.length', 3)
             .each(function($radio) {
                 cy.wrap($radio).check()
-                cy.wrap($radio).should('be.false')
+                .should('be.checked')
             })
     })
 
@@ -171,12 +171,12 @@ describe('Central de Atendimento ao Cliente TAT', function() {
 
     })
 
-    it.only('verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', function() {
+    it('verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', function() {
         cy.get('#privacy a')
             .should('have.attr', 'target','_blank')
     })
 
-    it.only('acessa a página da política de privacidade removendo o target e então clicando no link', function() {
+    it('acessa a página da política de privacidade removendo o target e então clicando no link', function() {
         cy.get('#privacy a')
             .invoke('removeAttr', 'target')
             .click()
