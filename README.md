@@ -6,7 +6,7 @@ Este repositório é dedicado ao desenvolvimento e execução de testes automati
 
 Aqui você encontrará informações sobre como contribuir para o projeto, clonando e configurando o ambiente de testes em sua própria máquina.
 
-## 🚧 Status do Projeto
+## Status do Projeto
 
 🚧 **Projeto de automação em desenvolvimento** 🚧
 
